@@ -1,0 +1,14 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Testing
+on: push
+
+jobs:
+  test-project:
+    runs-on: ubuntu latest
+    steps:
+    -uses: action/checkout@v2
+    -name: Run Django unit tests
+      run:
+        pip3 install --user django
+        python3 manage.py test
