@@ -2,7 +2,7 @@ name: Testing
 on: push
 
 jobs:
-  test-project:
+  test_project:
     runs-on: ubuntu latest
     steps:
     -uses: action/checkout@v2
